@@ -5,7 +5,7 @@ import { userPortfoliosRouter } from './routes/user-portfolio';
 import { MongoHelper } from './helpers/mongo.helper';
 // rest of the code remains same
 const app = express();
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 
 //options for cors midddleware
 const options: cors.CorsOptions = {
